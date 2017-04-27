@@ -4,7 +4,9 @@
   "description": "wheather crxs ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack src/main.js dist/main.js",
+    "start": "webpack-dev-server --inline"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-runtime": "^5.8.34",
     "css-loader": "^0.16.0",
+    "express": "^4.15.2",
     "file-loader": "^0.8.5",
     "html-loader": "^0.3.0",
     "node-sass": "^3.4.2",
@@ -38,9 +41,10 @@
     "vue-hot-reload-api": "^2.1.0",
     "vue-html-loader": "^1.2.0",
     "vue-loader": "^7.2.0",
-    "vue-hot-reload-api": "^2.1.0",
     "webpack": "^1.15.0",
-    "webpack-dev-server": "^1.14.0"
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-hot-middleware": "^2.18.0"
   },
   "dependencies": {
     "vue": "^2.3.0"

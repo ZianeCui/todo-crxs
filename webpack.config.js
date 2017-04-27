@@ -4,7 +4,12 @@ var path = require('path');
 // 模块导入
 module.exports = {
     // 入口文件地址，不需要写完，会自动查找
-    entry: './src/main',
+    entry: './src/main.js',
+    // resolve: {
+    //     alias: {
+    //         'vue': 'vue/dist/vue.js'
+    //     }
+    // },
     // 输出
     output: {
         path: path.join(__dirname, './dist'),
@@ -57,7 +62,8 @@ module.exports = {
         // 别名，可以直接使用别名来代表设定的路径以及其他
         alias: {
             filter: path.join(__dirname, './src/filters'),
-            components: path.join(__dirname, './src/components')
+            components: path.join(__dirname, './src/components'),
+            vue: '../node_modules/vue/dist/vue.min.js'
         }
     },
     // 开启source-map，webpack有多种source-map，在官网文档可以查到
