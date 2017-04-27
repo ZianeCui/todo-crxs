@@ -1,0 +1,26 @@
+{
+  "name": "weather-crxs",
+  "version": "1.0.0",
+  "description": "wheather crxs ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZianeCui/wheather-crxs.git"
+  },
+  "keywords": [
+    "chrome",
+    "crxs"
+  ],
+  "author": "zianecui@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZianeCui/wheather-crxs/issues"
+  },
+  "homepage": "https://github.com/ZianeCui/wheather-crxs#readme",
+  "devDependencies": {
+    "webpack": "^2.4.1"
+  }
+}

@@ -1,2 +1,2 @@
-# wheather-crxs
-learn to develop chrome crxs
+# weather-crxs
+learn how to develop chrome crxs
