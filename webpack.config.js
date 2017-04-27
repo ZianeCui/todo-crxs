@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 var path = require('path');
 // NodeJS中的Path对象，用于处理目录的对象，提高开发效率。
 // 模块导入
