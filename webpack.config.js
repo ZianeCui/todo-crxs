@@ -5,11 +5,6 @@ var path = require('path');
 module.exports = {
     // 入口文件地址，不需要写完，会自动查找
     entry: './src/main.js',
-    // resolve: {
-    //     alias: {
-    //         'vue': 'vue/dist/vue.js'
-    //     }
-    // },
     // 输出
     output: {
         path: path.join(__dirname, './dist'),

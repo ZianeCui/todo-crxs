@@ -5,5 +5,7 @@
     }
 </script>
 <template>
-    Hello world!
+    <div>
+        <input placeholder="请输入" />
+    </div>
 </template>
