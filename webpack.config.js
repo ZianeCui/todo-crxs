@@ -17,9 +17,10 @@ module.exports = {
     // 服务器配置相关，自动刷新!
     devServer: {
         historyApiFallback: true,
-        hot: false,
+        hot: true,
         inline: true,
         grogress: true,
+        port: 8082
     },
     // 加载器
     module: {
@@ -58,9 +59,12 @@ module.exports = {
         alias: {
             filter: path.join(__dirname, './src/filters'),
             components: path.join(__dirname, './src/components'),
-            vue: '../node_modules/vue/dist/vue.min.js'
+            vue: 'vue/dist/vue.js'
         }
     },
     // 开启source-map，webpack有多种source-map，在官网文档可以查到
-    devtool: 'eval-source-map'
+    devtool: 'eval-source-map',
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ]
 };

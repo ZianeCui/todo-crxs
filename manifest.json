@@ -1,12 +1,30 @@
 {
     "name": "Weather",
-    "manifest_version": 2,  //指定manifest文件的版本号
+    "manifest_version": 2, //指定manifest文件的版本号
     "version": "0.1",
     "description": "simple weather app",
     "browser_action": {
         "default_popup": "index.html"
     },
     "permissions": [
-        "http://api.flickr.com/"
+        "http://api.flickr.com/",
+        "http://*/*",
+        "https://*/*",
+        "file://*"
+    ],
+    "web_accessible_resources": [
+        "dist/main.js"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "dist/main.js"
+            ],
+            "run_at": "document_start"
+        }
     ]
 }
